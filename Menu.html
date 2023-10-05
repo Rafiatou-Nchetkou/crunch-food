@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+    <title>MENU</title>
+</head>
+<body>
+    <div class="diapo">
+        <!-- Conteneur des "diapos" -->
+        <div class="elements">
+            <!-- Première diapo -->
+            <div class="element active" style="background-image: url('img_crunch/poulet-frit-frites-sol-ciment-noir_1150-28544.avif'); background-size: cover;">
+                <div class="caption">
+                    <h1>MENU</h1>
+                    <p>PEU IMPORTE LES PROBLEMES QUE TU AS DANS TA VIE...MANGE D'ABORD</p>
+                </div>
+            </div>
+            <!-- Deuxième diapo -->
+            <div class="element" style="background-image: url(img_crunch/gros-plan-ailes-poulet-frit-frites.jpg); background-image: contain; background-repeat: no-repeat;">
+                <!-- <img src="img_crunch/gros-plan-ailes-poulet-frit-frites (1).jpg" alt="Image 2"> -->
+                <div class="caption">
+                    <h1>MENU</h1>
+                    <p>PEU IMPORTE LES PROBLEMES QUE TU AS DANS TA VIE...MANGE D'ABORD</p>
+                </div>
+            </div>
+            <!-- Troisième diapo -->
+            <div class="element">
+                <img src="img_crunch/img14.jpg" alt="Image 3">
+                <div class="caption">
+                    <h1>MENU</h1>
+                    <p>PEU IMPORTE LES PROBLEMES QUE TU AS DANS TA VIE...MANGE D'ABORD</p>
+                </div>
+            </div>
+            <!-- Quatrième diapo -->
+            <div class="element" style="background-image: url('img_crunch/biere-sauce-pres-poulet-pommes-terre_23-2147765442.avif'); background-size: cover;">
+                <!-- <img src="img_crunch/biere-sauce-pres-poulet-pommes-terre_23-2147765442.avif" height="300rem" alt="Image 2"> -->
+                <div class="caption">
+                    <h1>MENU</h1>
+                    <p>PEU IMPORTE LES PROBLEMES QUE TU AS DANS TA VIE...MANGE D'ABORD</p>
+                </div>
+            </div>
+        </div>
+        <!-- Flèches de navigation -->
+        <i id="nav-gauche" class="las la-chevron-left" onclick="slideNext"></i>
+        <i id="nav-droite" class="las la-chevron-right" onclick="slidePrev"></i>
+    </div>
+
+    <section class="menu">
+        <h1>POULET PANE</h1>
+        <div class="card">
+            <img src="./img_crunch/img19.jpg" alt="" width="35%" height="350rem">
+            <div class="nom">
+                <div class="title">
+                    <h3 name="pane_1">FLAME PANNED </h3>
+                    <div class="prix "name="pane_1"  >7.500F</div>
+                </div>
+                <div class="descrip">
+                    08 morceaux de poulet pané aux cornflakes + deux portions compléments
+                </div>
+                <button  class="btn "   id="pane_1" onclick="toggle(this.id)" >Commander</button>
+            </div>
+            <div id="sidebar">
+                <div class="fright"></div>
+                <div class="fstyle">
+                    <form action="" class="formu">
+                        <div class="img1">
+                            <img src="./images/IMG-20220921-WA0029.webp" alt="" id="image" width="602px" height="250px">
+                        </div>
+                        <div class="formu-2">
+                        <button class="fermerBtn"><i class="fa fa-times" aria-hidden="true"></i></button>
+                        <h2 id="nom-choix">dtgftg</h2>
+                        <h2 id="prix-choix">dtgftg</h2>
+                        <h2 class="h2-form">Assortiment</h2>
+                        <div class="assort">
+                            <input type="checkbox" class="ant-radio-input" value="Frites de pommes" name="complement"/>
+                            <label>Frite de pommes</label>
+                            <input type="checkbox" class="ant-radio-input" value="Frites de plantains" name="complement">
+                            <label>Frites de plantains</label>
+                            <input type="checkbox" class="ant-radio-input" value="baton" name="complement">
+                            <label>Bâtons de manioc</label>
+                        </div>
+                        <h2 class="h2-form">La sauce que je veux</h2>
+                        <div class="sauce">
+                            <input type="checkbox" name="sauce" id="piment" value="piment"> <label for="sauce">Piment</label>
+                            <input type="checkbox" name="sauce" id="Mayonnaise" value="mayonnaise"> <label for="sauce">Mayonnaise</label>
+                            <input type="checkbox" name="sauce" id="ketchup" value="ketchup"> <label for="sauce">ketchup</label><br>                
+                        </div>
+                        <h2 class="h2-form">Ma boisson</h2>
+                        <div class="boisson">
+                            <input type="checkbox" name="boisson" id="coca" value="coca"> <label for="boisson">coca</label>
+                            <input type="checkbox" name="boisson" id="malta" value="malta"> <label for="boisson">Malta</label>
+                            <input type="checkbox" name="boisson" id="grenadine" value="grenadine"> <label for="boisson">Grenadine</label>
+                            <input type="checkbox" name="boisson" id="Aucune" value="aucune"> <label for="boisson">Aucune</label>
+                        </div><br>
+                        <label for="">*Autres précisions concernant ma commande*</label><br><br>
+                        <input type="text" class="text" id="precis-commande">
+            
+                        <h2>Détail de livraison</h2>
+            
+                        <label for="" class="label">*Numéro à appeler*</label><br><br>
+                        <input type="number" class="text" id="numéro"> <br><br>
+                        <label for="">*Nom de la personne  à appeler*</label><br><br>
+                        <input type="text" class="text" id="perso-appeler"><br><br>
+                        <label for="">*Date de livraison*</label><br><br>
+                        <input type="date" class="text" id="date-livraison"><br><br>
+                        <h2 class="h2-form">Heure de la livraison</h2>
+                        <div class="heure">
+                            <input type="radio" name="heure"> <label for="heure">Le plus tôt possible</label><br><br>
+                            <input type="radio" name="heure"> <label for="heure">Dans 1h ou 2h</label><br><br>
+                            <input type="radio" name="heure"> <label for="heure">Tournée du soir (19h-21h)</label><br><br>
+                            <input type="radio" name="heure"> <label for="heure">Autre</label><br><br>
+                        </div><br>
+
+                        <label for="" class="label">*Lieu de livraison*</label><br><br>
+                        <input type="text" class="text" id="lieu-livraison"><br><br>
+
+                        <label for="" class="label">*Autrs indications concernant le lieu de livraison*</label><br><br>
+                        <input type="text" class="text" id="indication-livraison"><br><br>
+                            
+                        <h2 class="h2-form">TOTAL DE MA COMMANDE</h2>
+                            <p class="p-form">Le total sera communiqué par l'équipe après l'envoi de formulaire. Appuyer sur envoyez pour finaliser</p>
+                        <input type="button" onclick="whatsapp()" value="Envoyer sur WhatsApp" class="btn-form">
+                        </div>
+                    </form>
+                </div>    
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img_crunch/img20.jpg" alt="" width="35%" height="350rem">
+            <div class="nom">
+                <div class="title">
+                    <h3>FLAME MAGIC</h3>
+                    <div class="prix">10.000F</div>
+                </div>
+                <div class="descrip">
+                    11 morceaux de poulet pané aux cornflakes + 02 boissons gratuits (Malta/Coca) + deux portions de complements
+                </div>
+                <button onclick="toggle(this.id)" class="btn btnG" id="btn_menu">Commander</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img_crunch/img27.jpg" alt="" width="35%" height="350rem">
+            <div class="nom">
+                <div class="title">
+                    <h3>LITTLE SPARK PANNED</h3>
+                    <div class="prix">2.000F</div>
+                </div>
+                <div class="descrip">
+                    2 morceaux de poulet pané aux cornflakes + une portion de compléments (Livraison à partir de 2 packs)
+                </div>
+                <button class="btn btnG" id="btn_menu">Commander</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img_crunch/img23.jpg" alt="" width="35%" height="350rem">
+            <div class="nom">
+                <div class="title">
+                    <h3>SPARK PANNED</h3>
+                    <div class="prix">4.000F</div>
+                </div>
+                <div class="descrip">
+                    4 morceaux de poulet pané aux cornflakes +  une portions de complements
+                </div>
+                <button class="btn" id="btn_menu">Commander</button>
+            </div>
+            
+        </div>
+        <div class="card">
+            <img src="./img_crunch/img4.jpg" alt="" width="35%" height="350rem">
+            <div class="nom">
+                <div class="title">
+                    <h3>FLAME PANNED EXTENDED</h3>
+                    <div class="prix">8.000F</div>
+                </div>
+                <div class="descrip">
+                    01 Coca 35CL + 08 morceaux de poulet pané aux cornflakes + deux portions de compléments
+                </div>
+                <button class="btn btnG" id="btn_menu">Commander</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img_crunch/img21.jpg" alt="" width="35%" height="350rem">
+            <div class="nom">
+                <div class="title">
+                    <h3>SPARK MAGIC</h3>
+                    <div class="prix">5.000F</div>
+                </div>
+                <div class="descrip">
+                    Une boisson offerte(Malta/Coca) + 5 morceaux de poulet pané aux cornflakes +  une portions de complements
+                </div>
+                <button class="btn btnG" id="btn_menu">Commander</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img_crunch/img12.jpg" alt="" width="35%" height="350rem">
+            <div class="nom">
+                <div class="title">
+                    <h3>VOLCANO PANNED</h3>
+                    <div class="prix">14.000F</div>
+                </div>
+                <div class="descrip">
+                    16 morceaux de poulet pané aux cornflakes + quatre portions de complements
+                </div>
+                <button class="btn btnG" id="btn_menu">Commander</button>
+            </div>
+        </div>
+        <h1>POULET BRAISE</h1>
+        <div class="card">
+            <img src="./img_crunch/img13.jpg" alt="" width="35%" height="350rem">
+            <div class="nom">
+                <div class="title">
+                    <h3>FLAME ROASTED</h3>
+                    <div class="prix">5.500F</div>
+                </div>
+                <div class="descrip">
+                    1/2 poulet braisé au charbon de bois et aux herbes tropicales + deux portions de complements
+                </div>
+                <button class="btn" id="btn_menu">Commander</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img_crunch/img13.jpg" alt="" width="35%" height="350rem">
+            <div class="nom">
+                <div class="title">
+                    <h3>SPARK ROASTED</h3>
+                    <div class="prix">3.000F</div>
+                </div>
+                <div class="descrip">
+                    1/4 de poulet braisé au charbon de bois et aux herbes tropicales + une portions de complements
+                </div>
+                <button class="btn" id="btn_menu">Commander</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img_crunch/img24.jpg" alt=""  height="350rem">
+            <div class="nom btnG">
+                <div class="title">
+                    <h3>VOLCANO ROASTED</h3>
+                    <div class="prix">10.000F</div>
+                </div>
+                <div class="descrip">
+                    1 poulet entier(4 quarts) braisé au charbon de bois et aux herbes tropicales + 4 portions de compléments
+                </div>
+                <button class="btn" id="btn_menu">Commander</button>
+            </div>
+        </div>
+        <h1>MET DE POULET</h1>
+        <div class="card">
+            <img src="./img_crunch/img9.jpg" alt="" width="35%" height="350rem">
+            <div class="nom">
+                <div class="title">
+                    <h3>MET DE POULET</h3>
+                    <div class="prix">5.000F</div>
+                </div>
+                <div class="descrip">
+                    1 à 3.000F et 2 à 5000F (livraison à partir de 2)
+                </div>
+                <button class="btn" class="btn_menu">Commander</button>
+            </div>
+        </div>
+        <h1>MENU MIXTE</h1>
+        <div class="card">
+            <img src="./img_crunch/img26.jpg" alt="" width="35%" height="350rem">
+            <div class="nom">
+                <div class="title">
+                    <h3>MENU MIXTE</h3>
+                    <div class="prix">7.500F</div>
+                </div>
+                <div class="descrip">
+                    <p>
+                        1/4 de poulet de poulet braisé au charbon de bois et aux herbes tropicales +
+                        4 morceaux de poulet pané aux cornflakes + une boisson offerte(Malta/Coca) + une portion de compléments
+                    </p>
+                </div>
+                <button class="btn btnG2" id="btn_menu">Commander</button>
+            </div>
+        </div>
+        <h1>SANDWICH</h1>
+        <div class="card">
+            <img src="./img_crunch/img25.jpg" alt="" width="35%" height="350rem">
+            <div class="nom">
+                <div class="title">
+                    <h3>Sandwich</h3>
+                    <div class="prix">1.500F</div>
+                </div>
+                <div class="descrip">
+                    1 Sandwich au poulet
+                </div>
+                <button class="btn" id="btn_menu">Commander</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img_crunch/img17.jpg" alt="" width="35%" height="350rem">
+            <div class="nom">
+                <div class="title">
+                    <h3>Sandwich</h3>
+                    <div class="prix">3.000F</div>
+                </div>
+                <div class="descrip">
+                    2 Sandwiches au poulet
+                </div>
+                <button class="btn" id="btn_menu">Commander</button>
+            </div>
+        </div>
+        
+    </div>
+    </section>
+
+
+    <script>
+        // Variables globales
+        let compteur = 0 // Compteur qui permettra de savoir sur quelle slide nous sommes
+        let timer, elements, slides, slideWidth
+
+        // On récupère le conteneur principal du diaporama
+        const diapo = document.querySelector(".diapo")
+
+        // On récupère le conteneur de tous les éléments
+        elements = document.querySelector(".elements")
+
+        // On récupère un tableau contenant la liste des diapos
+        slides = Array.from(elements.children)
+
+        // On récupère les deux flèches
+        let next = document.querySelector("#nav-droite")
+        let prev = document.querySelector("#nav-gauche")
+
+        
+        // On calcule la largeur visible du diaporama
+        slideWidth = diapo.getBoundingClientRect().width
+
+        // On met en place les écouteurs d'évènements sur les flèches
+        next.addEventListener("click", slideNext)
+        prev.addEventListener("click", slidePrev)
+
+        /**
+     * Cette fonction fait défiler le diaporama vers la droite
+     */
+    function slideNext(){
+        // On incrémente le compteur
+        compteur++
+
+        // Si on dépasse la fin du diaporama, on "rembobine"
+        if(compteur == slides.length){
+            compteur = 0
+        }
+
+        // On calcule la valeur du décalage
+        let decal = -slideWidth * compteur
+        elements.style.transform = `translateX(${decal}px)`
+    }
+
+    /**
+     * Cette fonction fait défiler le diaporama vers la gauche
+     */
+    function slidePrev(){
+        // On décrémente le compteur
+        compteur--
+
+        // Si on dépasse le début du diaporama, on repart à la fin
+        if(compteur < 0){
+            compteur = slides.length - 1
+        }
+
+        // On calcule la valeur du décalage
+        let decal = -slideWidth * compteur
+        elements.style.transform = `translateX(${decal}px)`
+    
+    }
+    // Automatiser le diaporama
+    timer = setInterval(slideNext, 4000)
+
+    // Gérer le survol de la souris
+    diapo.addEventListener("mouseover", stopTimer)
+    diapo.addEventListener("mouseout", startTimer)
+
+    /**
+     * On stoppe le défilement
+     */
+    function stopTimer(){
+        clearInterval(timer)
+    }
+
+    /**
+     * On redémarre le défilement
+     */
+    function startTimer(){
+        timer = setInterval(slideNext, 4000)
+    }
+
+    // Mise en oeuvre du "responsive"
+    window.addEventListener("resize", () => {
+        slideWidth = diapo.getBoundingClientRect().width
+        slideNext()
+    })
+
+
+    // js du formulaire
+    const btn_menu = document.querySelectorAll('btn_menu')
+        const sideform = document.getElementsByClassName('sideform')
+        const fermerBtn = document.getElementById('fermerBtn')
+
+        // document.onclick = function(e){
+           
+        //     if(e.target.classList !== 'sideform' && e.target.classList !== 'btn_menu'){  
+        //         btn_menu.classList.remove('active');
+        //         fermerBtn.classList.remove('active');
+        //         // sidebar.classList.remove('active');
+        //     }
+        // }
+
+        btn_menu.onclick = function(e){
+            if(e.target.classList == "btn_menu" ){  alert("hello")
+            btn_menu.classList.toggle('active');
+            sidebar.classList.toggle('active');  }
+        }
+        function toggle(name){
+            document.getElementById(name).classList.add('active');
+            sidebar.classList.toggle('active'); 
+             let total = array(2)
+             total[i] = document.getElementsByClassName(name).textContent 
+       
+        for (let i = 0; i < total.length; i++) {
+           
+            alert(total[i]) 
+        }
+            
+            
+        }
+
+        // code js de l'envoi du formulaire sur whatsapp
+
+        function whatsapp(){
+            // var pouletPane = document.getElementById("poulet-pane").value;
+            // var pouletpane = document.getElementById("poulet-pane").value;
+            var complements = checkedboxes('complement');
+            var sauces = checkedboxes('sauce');
+            var boissons = checkedboxes('boisson');
+            // var emballages = checkedboxes('emballage');
+            var precisionCommande = document.getElementById("precis-commande").value;
+            var numéro = document.getElementById("numéro").value;
+            var persoAppeler = document.getElementById("perso-appeler").value;
+            var dateLivraison = document.getElementById("date-livraison").value;
+            var lieuLivraison = document.getElementById("lieu-livraison").value;
+            var indicationLivraison = document.getElementById("indication-livraison").value;
+
+
+            function checkedboxes(name){
+                var checkboxes = document.getElementsByName(name)
+                var checked = [];
+                for (var i=0; i<checkboxes.length;i++){
+                    if (checkboxes[i].checked){
+                        checked.push(checkboxes[i].value);
+                    }
+                }
+                var list='';
+                for(i=0; i<checked.length; i++){
+                    list=list+', '+checked[i]
+                }
+                return (list) ;
+            }
+            
+            
+        
+            var WhatsApp="https://wa.me/+237698144985?text=" 
+            // + "je veux un: " + pouletpane + "%0a"
+            +"comme complément: " +complements+  "%0a"
+            + "La sauce que je veux: " + sauces + "%0a"
+            + "Ma boisson: " + boissons + "%0a"
+            // + "Mon emballage" + emballages + "%0a"
+            + "Autres précision sur la commande: " + precisionCommande + "%0a"
+            + "Numéro: " + numéro + "%0a"
+            + "Nom de la personne à appeler " + persoAppeler + "%0a"
+            + "Date de livraison: " + dateLivraison + "%0a"
+            + "Lieu de livraison:" + lieuLivraison + "%0a"
+            + "Autres indication sur le lieu de livraison:" + indicationLivraison;
+
+
+            window.open(WhatsApp,"_blank").focus(); 
+        }  
+    </script>
+</body>
+</html>

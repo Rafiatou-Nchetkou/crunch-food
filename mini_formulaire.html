@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=DM+Sans:wght@400;500;700&family=Dosis:wght@300;500;600&family=Montserrat:wght@200&family=Poppins:wght@100;200;300;400;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mini.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="toggle"><button>commander</button></div>
+    <div id="sidebar">
+    <form action="">
+        <div class="img1">
+            <img src="./images/IMG-20220921-WA0029.webp" alt="" id="image" width="600px" height="300px">
+        </div>
+        <h2>Assortiment</h2>
+        <div class="assort">
+            <input type="checkbox" class="ant-radio-input" value="Frites de pommes" name="complement"/>
+            <label>Frite de pommes</label>
+            <input type="checkbox" class="ant-radio-input" value="Frites de plantains" name="complement">
+            <label>Frites de plantains</label>
+            <input type="checkbox" class="ant-radio-input" value="baton" name="complement">
+            <label>Bâtons de manioc</label>
+        </div>
+        <h2>La sauce que je veux</h2>
+        <div class="sauce">
+            <input type="checkbox" name="sauce" id="piment" value="piment"> <label for="sauce">Piment</label>
+            <input type="checkbox" name="sauce" id="Mayonnaise" value="mayonnaise"> <label for="sauce">Mayonnaise</label>
+            <input type="checkbox" name="sauce" id="ketchup" value="ketchup"> <label for="sauce">ketchup</label><br>                
+        </div>
+        <h2>Ma boisson</h2>
+        <div class="boisson">
+            <input type="checkbox" name="boisson" id="coca" value="coca"> <label for="boisson">coca</label>
+            <input type="checkbox" name="boisson" id="malta" value="malta"> <label for="boisson">Malta</label>
+            <input type="checkbox" name="boisson" id="grenadine" value="grenadine"> <label for="boisson">Grenadine</label>
+            <input type="checkbox" name="boisson" id="Aucune" value="aucune"> <label for="boisson">Aucune</label>
+        </div>
+        <h2>Heure de la livraison</h2>
+        <div class="heure">
+            <input type="radio" name="heure"> <label for="heure">Le plus tôt possible</label><br>
+            <input type="radio" name="heure"> <label for="heure">Dans 1h ou 2h</label><br>
+            <input type="radio" name="heure"> <label for="heure">Tournée du soir (19h-21h)</label><br>
+            <input type="radio" name="heure"> <label for="heure">Autre</label><br>
+        </div>
+
+        <h2>TOTAL DE MA COMMANDE</h2>
+            <p>Le total sera communiqué par l'équipe après l'envoi de formulaire. Appuyer sur envoyez pour finaliser</p>
+
+
+            <input type="button" onclick="whatsapp()" value="Envoyer sur WhatsApp" class="btn">
+    </form>
+</div>
+
+<script>
+    const toggle = document.getElementById('toggle');
+    const sidebar = document.getElementById('sidebar')
+    
+    document.onclick = function(e){
+        if(e.target.id !=="sidebar" && e.target.id !=="toggle"){
+            toggle.classList.remove('active');
+        sidebar.classList.remove('active');
+        }
+    }
+    
+    
+    toggle.onclick = function(){
+        toggle.classList.toggle('active');
+        sidebar.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

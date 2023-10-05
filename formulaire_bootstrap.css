@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    background-color: #F0F2F5;
+}
+.formu{
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+}
+.formu img{
+    width: 100%;
+}
+.formu-2 h2{
+    color: #ad1000;
+}
+.formu-2 .text {
+    width: 60%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: 'poppins';
+}
+.p-form{
+    margin-right: 5%;
+}
+.assort{
+    margin-right: 1.1%;
+    margin-left: -2%;
+}
+.valider{
+    width: 25%;
+    margin-bottom: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'poppins';
+    font-size: 1rem;
+    color: #fff;
+    background-color: #f5af09;
+}
+.btn-form{
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ad1000;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-family: poppins;
+    margin-left: 20%;
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+#informations-cartes{
+    display: flex;
+    width: 80%;
+    gap: 1.5rem;
+}
+.formu-2{
+    margin-left: 5%;
+}
+.test{
+    border: 1px solid black;
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    margin: auto;
+    font-family: 'poppins';
+}
+
+@media (max-width:768px) {
+    .formu{
+        width: 100%;
+    }
+    .btn-form{
+        font-size: 1rem;
+    }
+    .formu img{
+        height: 10rem;
+    }
+}

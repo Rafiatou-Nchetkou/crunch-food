@@ -1,0 +1,553 @@
+:root{
+    --black: #272d6b;
+    --red: #00102e;
+    --coral: #f7817f;
+    --gradient: linear-gradient(98deg, var(var(--red), var(var(--coral))));
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    transition: all .2s linear;
+    font-family: 'Poppins', sans-serif;
+}
+*::selection{
+    background-color: #00102e;
+    transform: capitalize;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+section{
+    padding: 2rem 8%;
+}
+.nav-item a{
+    font-size: 1.2rem;
+    color: #ad1000;
+    font-weight: 600;
+}
+.btn{
+    display: inline-block;
+    padding: .7rem 3rem;
+    margin-top: 1rem;
+    margin-left: 13px;
+    border-radius: 5px 15px 5px 15px;
+    background-color: #f5af09;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background: var(--red);
+}
+#azerty{
+    color: #ad1000;
+    font-size: 5rem;
+    font-weight: 600;
+}
+#Accueil{
+    background: rgba(0, 0, 0, 0.1) url('./img_crunch/mise-plat-poulet-mayonnaise-espace-copie.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+    height: auto;
+}
+.accueil{
+    width: 100%;
+    height: 100vh;
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+}
+.detail-accueil p{
+    font-size: 2.5rem;
+    margin: 1rem;
+    width: 450px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    line-height: 4rem;
+    text-transform: lowercase;
+}
+.detail-accueil .btn{
+    font-size: 1rem;
+    color: black;
+    background-color: #DDAA44;
+}
+.detail-accueil .btn:hover{
+    color: white;
+    background-color: transparent;
+    border: 1px solid #DDAA44;
+}
+#img1{
+    width: 400px;
+    margin-left: -20px;
+}
+
+
+.usage{
+    margin-top: 5rem;
+}
+.usage .divider{
+    width: 50%;
+    height: 30rem;
+    margin-top: -200px;
+} 
+.usage .box-container{
+    display: flex;
+    align-items: right;
+    font-family: 'Poppins', sans-serif;
+}
+.usage .heading{
+    margin-left: 10px;
+    font-weight: 700;
+    margin-bottom: -30px;
+}
+.usage .heading2{
+    width: 50%;
+    text-align: left;
+    margin-left: 5px;
+    font-weight: 700;
+    font-size: 5rem;
+    font-family: 'Barlow', sans-serif;
+    margin-top: -30px;
+}
+.usage .heading2 .heading2-crunch{
+    color: #ad1000;
+}
+#box2{
+    margin-top: -120px;
+} 
+.usage .box-container .row p{
+    width: 500px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: normal; 
+    padding: 15px;
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+}
+
+.baniere{
+    background-image: url(./images/vue-dessus-pilons-frits-frites.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    margin-top: 120px;
+    margin-bottom: 200px;
+}
+
+.photo h3{
+    color: #DDAA44;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+.galerie{
+    padding: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+    /* background: #f2f2f2; */
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+    margin-bottom: 50px;
+}
+.v-etandu{
+    grid-row: span 2;
+}
+.h-etandu{
+    grid-column: span 2;
+}
+.big-etandu{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.galerie div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.shop{
+    padding: 2rem 8%;
+}
+.shop h1{
+    font-size: 2rem;
+    color: #DDAA44;
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+.shop .row .card img{
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.shop .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+.shop .row .card{
+    box-shadow: 0 9px 28px rgba(0, 0, 0, 0.30), 0 5px 2px rgba(0, 0, 0, 0.30);
+    border-radius: 10px;
+    height: auto;
+}
+.shop, .row, .card{
+    width: 100%;
+    gap: 60px;
+}
+.card{
+    padding: 1.5rem;
+}
+
+
+/* section a propos */
+.propos{
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+.sous_propos img{
+    width: 100%;
+    height: 300px;
+}
+.propos h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #f5af09;
+    margin-bottom: 1rem;
+}
+.sous_propos{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    font-size: 20px;
+    margin-top: 2rem;
+}
+.text{
+    width: 50%;
+}
+.text button{
+    width: 220px;
+    margin-top: 50px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #ad1000;
+    background-color: #fff;
+    font-size: 22px;
+}
+
+.fa{
+    margin-left: 15px;
+    font-size: 16px;
+}
+.text button a{
+    color: #ad1000;
+}
+.text button:hover{
+    background-color: #ad1000;
+}
+.text button a:hover{
+    color: #f5af09;
+}
+
+
+
+.footer{
+    /* background-color: #272d6b; */
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/conception-style-degrade-minimaliste-luxe-noir-fond_698780-813.avif');
+    background-size: cover;
+}
+.footer .share a{
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    background-color: #ad1000;
+    color: #f5af09;
+    border-radius: 50%;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+#logoFin{
+    width: 200px;
+    text-align: center;
+    margin-top: -4rem;
+}
+.hr1{
+    position: relative;
+    width: 100%;
+    left: -200px;
+    color: #fff;
+}
+.hr2{
+    position: relative;
+    width: 100%;
+    top: -60px;
+    left: 200px;
+    color: #fff;
+}
+.part2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.cas1{
+    color: #fff;
+    width: 170px;
+    text-align: center;
+    font-size: 1rem;
+    margin: auto;
+}
+.cas2{
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    font-size: 1rem;
+    margin: auto;
+}
+
+
+.footer .share a:hover{
+    color: #fff;
+    background: var(--gradient);
+}
+.footer .credit{
+    color: #777;
+    font-weight: normal;
+    font-size: 1rem;
+}
+.footer .credit span{
+    color: #777;
+}
+
+
+form{
+    width: 100%;
+    font-family: poppins;
+}
+#image{
+    padding: 0;
+    border-radius: 0;
+}
+.h2-form{
+    margin-left: 15px;
+    color: black;
+    font-family: poppins;
+    font-style: normal;
+    font-size: 18px;
+}
+label{
+    color: #74767B;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+}
+.p-form{
+    color: #74767B;
+    font-weight: 500;
+    padding: 0 10px 0 15px;
+    font-style: normal;
+    font-family: poppins;
+}
+.assort{
+    padding: 0 10px 0 15px;
+}
+.sauce{
+    padding: 0 10px 0 15px;
+}
+.boisson{
+    padding: 0 10px 0 15px;
+}
+.heure{
+    padding: 0 10px 0 15px;
+}
+.btn-form{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 30px;
+    background-color: #ad1000;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-family: poppins;
+    margin-bottom: 15px;
+    font-style: normal;
+}
+
+.fermerBtn{
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    top: 0;
+    left: 500px;
+    cursor: pointer;
+    z-index:220;
+    color: #000;
+    text-align: center;
+    font-weight: 200;
+}
+.fermerBtn:hover{
+    background-color: rgb(240, 0, 0);
+    border: none;
+    color: #fff;
+}
+.fa{
+    font-size: 25px;
+}
+
+
+/* ----------media sreen ---------------------*/
+@media (max-width: 768px){
+    .navbar{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }  
+    .container-fluid .navbar-brand{
+        margin-left: 40%;
+    }
+    .container-fluid .navbar-brand img{
+        width: 40%;
+    }
+    .navbar-toggler{
+        margin-top: -3rem;
+        border: 1px solid black;
+    }
+    #Accueil{
+        padding-top: 2rem;
+        height: 15rem;
+    }
+    .detail-accueil p{
+        font-size: 1rem;
+        width: 100%;
+        margin: 0;
+        font-weight: 600;
+        line-height: 2rem;
+        text-transform: lowercase;
+    }
+    .mange{
+        text-transform: capitalize;
+    }
+    .detail-accueil .btn{
+        font-size: 1rem;
+        color: #fff;
+        background-color: #ad1000;
+        margin-left: 0;
+    }
+    #azerty{
+        font-size: 2rem;
+    }
+
+    #features{
+        padding: 2rem 4%;
+    }
+    .usage{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .usage .divider{
+        width: 50%;
+        height: 10rem;
+        margin-top: -35px;
+    } 
+    .usage .heading{
+        width: 50%;
+        margin-left: 5px;
+        font-weight: 700;
+        margin-top: -30px;
+    }
+    .usage .heading2{
+        width: 50%;
+        text-align: left;
+        margin-left: 5px;
+        font-weight: 700;
+        font-size: 1.5rem;
+        font-family: 'Barlow', sans-serif;
+        margin-top: 20px;
+    }
+    #box2{
+        margin-top: -120px;
+    } 
+    .usage .box-container .row p{
+        width: 100%;
+        font-size: 0.6rem;
+        font-weight: 500;
+        font-style: normal; 
+        padding: 15px;
+        line-height: 0.7rem;
+        font-family: 'Roboto', sans-serif;
+        margin-top: -15px;
+    }
+
+    .baniere{
+        background-size: contain;
+        width: 100%;
+        height: 15rem;
+        margin-top: 0px;
+        margin-bottom: 3rem;
+    }
+    .photo h3{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+
+    .propos {
+        padding: 1rem 4%;
+    }
+    .sous_propos img{
+        width: 100%;
+        height: 10rem;
+    }
+    .propos h1{
+        text-align: center;
+        font-size: 2rem;
+        color: #f5af09;
+        margin-bottom: 1rem;
+    }
+    .sous_propos{
+        gap: 1rem;
+        font-size: 20px;
+        margin-top: 2rem;
+    }
+    .text{
+        width: 90%;
+        font-size: 0.8rem;
+    }
+    .text button{
+        width: 80%;
+        margin-top: 0px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ad1000;
+        font-size: 1rem;
+    }
+    
+}

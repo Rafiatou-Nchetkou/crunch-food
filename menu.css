@@ -1,0 +1,313 @@
+.diapo{
+    position: relative;
+    overflow: hidden;
+    height: 20rem;
+    margin: 0;
+    padding: 0;
+}
+#nav-droite, #nav-gauche{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 3em;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+#nav-droite{
+    right: 20px;
+}
+#nav-gauche{
+    left: 20px;
+}
+.elements{
+    display: flex;
+    transition: 1s linear;
+    height: 500px;
+}
+
+.element{
+    flex: 1 0 100%;
+    position: relative;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.element > img{
+    width: 100%;
+}
+
+.caption{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255,255,255,0.4);
+    padding: 30px;
+}
+.caption h1{
+    font-size: 64px;
+    color: #ad1000;
+}
+
+
+/* section des cartes */
+.card{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom: 1px solid rgba(17, 16, 16, 0.4);
+    border-top: 1ps solid rgba(8, 8, 8, 0.4);
+    
+}
+.menu h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    color: #ad1000;
+}
+.card img{
+    border-radius: 1rem;
+}
+.nom{
+    margin-left: 100px;
+    width: 30rem;
+    justify-content: center;
+}
+.title{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-top: -30px;
+}
+.title h3{
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    color: #f5af09;
+}
+.prix{
+    margin-top: 1rem;
+    text-align: right;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-top: 35px;
+    color: #ad1000;
+}
+.nom button{
+    margin-top: 5rem;
+    padding: 13px 25px 13px 25px;
+    background-color: #f5af09;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 0 30px 0 30px;
+}
+.descrip{
+    font-size: 22px;
+}
+#sidebar{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    transition: 0.5s;
+    overflow-y: scroll;
+    height: 1550px;
+
+}
+#sidebar .fright{
+    width: 55%;
+    background-color: #222;
+    opacity: 0.5;
+    height: 1550px;
+
+}
+#sidebar .fstyle{
+    width: 45%;
+    height: 1550px;
+    background-color: #fff;
+    opacity: 1;padding-bottom: 130px;
+    border: none;
+    padding-bottom: 55rem;
+}
+#sidebar.active{
+    overflow: scroll;
+    right: 0%;
+}
+.formu-2 h2{
+    color: #ad1000;
+}
+.formu .img1 img{
+    border-radius: 0;
+}
+.formu-2{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.formu-2 .text{
+    width: 50%;
+    border-radius: 5px;
+    padding: 10px;
+}
+.btn-form{
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 30px;
+    background-color: #ad1000;
+    color: #fff;
+    border: none;
+    font-size: 22px;
+    font-family: poppins;
+    margin-bottom: 15px;
+}
+#toggle
+{
+    width: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.formu .fermerBtn{
+    position: absolute;
+    top: 10px;
+    left: 1250px;
+    cursor: pointer;
+    z-index:220;
+    color: #000;
+    text-align: center;
+    font-weight: 200;
+    border-radius: 100% 100%;
+    font-size: 2rem;
+    border: none;
+    background-color: rgba(34, 34, 34, 0);
+}
+.fermerBtn:hover{
+    background-color: rgb(240, 0, 0);
+    border: none;
+    color: #fff;
+}
+
+
+@media (max-width:760px) {
+    .menu{
+        width: 90%;
+    }
+    .element img{
+        width: 100%;
+    }
+    .card{
+        width: 95%;
+        height: 7rem;
+        margin-left: 1rem;
+    }
+    .menu h1{
+        font-size: 1.5rem;
+        margin-left: 2.5rem;
+    }
+    .card img{
+        width: 35%;
+        height: 7rem;
+    }
+    .title h3{
+        font-size: 18px;
+    }
+    .title .prix{
+        margin-top: 15px;
+    }
+    .prix{
+        font-size: 18px;
+    }
+    .title{
+        width: 250px;
+        justify-content: space-between;
+        margin-top: -25px;
+    }
+    .descrip{
+        width: 17rem;
+        font-size: 13px;
+        margin-top: -40px;
+    }
+    .nom{
+        width: 11rem;
+        margin-left: 1rem;
+    }
+    .nom button{
+        padding: 7px 15px 7px 15px;
+        font-size: 15px;
+        border: none;
+        border-radius: 0 15px 0 15px;
+        margin-top: 1rem;
+    }
+    .nom .btnG{
+        margin-top: 5px;
+    }
+    .nom .btnG2{
+        margin-top: -15px;
+    }
+    .caption{
+        padding: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    .caption h1{
+        font-size: 32px;
+        color: #ad1000;
+    }
+
+    /* formulaire */
+    #sidebar .fstyle{
+        width: 80%;
+        height: 1550px;
+    }
+    .formu .img1 img{
+        width: 100%;
+    }
+    .assort{
+        width: 9rem;
+    }
+    .sauce{
+        width: 6rem;
+    }
+    .boisson{
+        width: 4.5rem;
+    }
+    .heure{
+        display: block;
+    }
+    #sidebar{
+        height: 2000px;
+    }
+    #sidebar .fright{
+        height: 2000px;
+    }
+    #sidebar .fstyle{
+        height: 2000px;
+        padding-bottom: 68rem;
+    }
+    .btn-form{
+        font-size: 12px;
+        font-family: poppins;
+    }
+    .formu .fermerBtn{
+        position: absolute;
+        top: -2px;
+        left: 440px;
+        font-size: 22px;
+    }
+}

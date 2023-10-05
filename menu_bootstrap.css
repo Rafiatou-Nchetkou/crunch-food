@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.nav-item a{
+    font-size: 1.2rem;
+    color: #ad1000;
+    font-weight: 600;
+}
+
+.container-fluid{
+    background-color: rgba(187, 30, 30, 0);
+    margin-top: -8px;
+    margin-bottom: -8px;
+    padding: 0;
+}
+.carousel-item img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.ancre{
+    height: 20rem;
+}
+.titre h1{
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+}
+.titre p{
+    font-size: 1.2rem;
+    font-weight: 900px;
+    text-align: center;
+    margin-top: -25px;
+}
+.titre-2 h2{
+    font-size: 4rem;
+    font-weight: 700px;
+    text-align: center;
+    color: #ad1000;
+    margin-top: 4rem;
+}
+.specialite{
+    padding-top: 3rem;
+}
+.titre-2 p{
+    font-size: 1.2rem;
+    font-weight: 800px;
+    text-align: center;
+}
+.row{
+    margin: auto;
+}
+.row-cols-auto{
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+}
+.bloc a{
+    text-decoration: none;
+}
+.row p{
+    background-color: none;
+    color: #fff;
+    border: 2px solid #f5af09;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+
+.sous-t{
+    display: flex;
+    justify-content: space-between;
+}
+.sous-t h5{
+    font-size: 1.2rem;
+    color: #ad1000;
+    font-weight: 600;
+}
+.jour{
+    width: 85%;
+    margin: auto;
+}
+.carte-jour{
+    display: flex;
+    margin: auto;
+    gap: 3rem;
+    width: 70%;    
+}
+.card-body .btn{
+    background-color: #f5af09;
+    border: none;
+}
+.carte-jour .card{
+    width: 50%;
+}
+
+
+
+/* la section liste des menus */
+.liste-menu .row{
+    width: 90%;
+    border-bottom: 1px solid black;
+    padding: 15px 0 15px 0;
+}
+.liste-menu h1{
+    margin: 10rem 0 3rem 6rem;
+    font-size: 3rem;
+    color: #ad1000;
+    font-weight: 600;
+}
+.liste-menu .row-cols-2{
+    text-align: left;
+}
+.liste-menu .row img{
+    border-radius: 45px;
+    width: 27rem;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.title h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f5af09;
+}
+.prix{
+    color: #ad1000;
+    font-weight: 600;
+}
+.descrip{
+    text-align: left;
+    margin-top: 3rem;
+}
+.liste-menu .row .nom .btn{
+    color: #ad1000;
+    border: none;
+    font-size: 1.2rem;
+}
+.panier{
+    width: 70%;
+    height: 3rem;
+    margin-top: 7rem;
+    border: 1px solid #f5af09;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+}
+.card-body .btn{
+    color: #fff;
+}
+.liste-menu .row .nom label{
+    justify-content: left;
+}
+ /* division caché des menus choisi */
+.menu-choisi{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.1);
+    position: fixed;
+    justify-content: center;
+    bottom: 0px;
+    z-index: 1000;
+    padding: 5px;
+    /* display: none; */
+}
+.menu-choisi button{
+    border-radius: 5px;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    font-size: 1.5rem;
+    margin-left: 40%;
+}
+
+
+
+.footer{
+    /* background-color: #272d6b; */
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/conception-style-degrade-minimaliste-luxe-noir-fond_698780-813.avif');
+    background-size: cover;
+}
+.footer .share a{
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    background-color: #ad1000;
+    color: #f5af09;
+    border-radius: 50%;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+#logoFin{
+    width: 100%;
+}
+.part2{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 5rem;
+    margin: auto;
+}
+.cas1{
+    width: 150px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: auto;
+}
+.cas2{
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+.footer{
+    margin-top: 5rem;
+    padding-bottom: 4rem;
+}
+.footer .share a:hover{
+    color: #fff;
+    background: var(--gradient);
+}
+.footer .credit{
+    color: #777;
+    font-weight: normal;
+    font-size: 1rem;
+}
+.footer .credit span{
+    color: #777;
+}
+
+
+form{
+    width: 100%;
+    font-family: poppins;
+}
+#image{
+    padding: 0;
+    border-radius: 0;
+}
+.h2-form{
+    margin-left: 15px;
+    color: black;
+    font-family: poppins;
+    font-style: normal;
+    font-size: 18px;
+}
+label{
+    color: #74767B;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+}
+.p-form{
+    color: #74767B;
+    font-weight: 500;
+    padding: 0 10px 0 15px;
+    font-style: normal;
+    font-family: poppins;
+}
+.assort{
+    padding: 0 10px 0 15px;
+}
+.sauce{
+    padding: 0 10px 0 15px;
+}
+.boisson{
+    padding: 0 10px 0 15px;
+}
+.heure{
+    padding: 0 10px 0 15px;
+}
+.btn-form{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 30px;
+    background-color: #ad1000;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-family: poppins;
+    margin-bottom: 15px;
+    font-style: normal;
+}
+
+.fermerBtn{
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    top: 0;
+    left: 500px;
+    cursor: pointer;
+    z-index:220;
+    color: #000;
+    text-align: center;
+    font-weight: 200;
+}
+.fermerBtn:hover{
+    background-color: rgb(240, 0, 0);
+    border: none;
+    color: #fff;
+}
+.fa{
+    font-size: 25px;
+}
+
+
+
+
+@media (max-width:768px) {
+    .navbar{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }  
+    .container-fluid .navbar-brand{
+        margin-left: 40%;
+    }
+    .container-fluid .navbar-brand img{
+        width: 40%;
+        padding-top: 5px;
+    }
+    .navbar-toggler{
+        margin-top: -2rem;
+        margin-bottom: 12px;
+        border: 1px solid black;
+    }
+    .carousel{
+        width: 100%;
+        height: 15rem;
+    } 
+    .carousel img{
+        width: 100%;
+        height: 15rem;
+    } 
+    .ancre{
+        height: auto;
+    }
+    .titre h1{
+        font-size: 5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .titre p{
+        font-size: 1rem;
+        font-weight: 900px;
+        text-align: center;
+        margin-top: -25px;
+    }
+    .titre-2 h2{
+        font-size: 2.5rem;
+        font-weight: 500;
+        text-align: center;
+        color: #ad1000;
+        margin-top: 4rem;
+    }
+    .specialite{
+        padding-top: 0;
+    }
+    .titre-2 p{
+        font-size: 1rem;
+        font-weight: 800px;
+        text-align: center;
+    }
+    .card img{
+        width: 100%;
+    }
+    /* .jour{
+        width: 100%;
+    } */
+    .carte-jour{
+        display: inline-block;
+        margin-top: 5rem;
+        width: 100%;
+    }
+    .carte-jour .card{
+        margin-bottom: 2rem;
+        /* border: 1px solid black; */
+    }
+
+    .liste-menu h1{
+        margin: 4rem 0 2rem 3rem;
+        font-size: 1.5rem;
+        color: #ad1000;
+        font-weight: 600;
+    }
+    .liste-menu .row{
+        width: 85%;
+    }
+    .liste-menu .row img{
+        width: 20%;
+        height: 5rem;
+        border-radius: 5px;
+        padding: 0;
+    }
+    .nom{
+        width: 70%;
+        padding: 0;
+        margin-left: 16px;
+    }
+    .title{
+        width: 100%;
+        margin-top: -0.05rem;
+    }
+    .title h3{
+        width: 100%;
+        font-size: 15px;
+        font-weight: 600;
+        color: #f5af09;
+    }
+    .prix{
+        color: #ad1000;
+        font-weight: 600;
+        margin-top: -2px;
+        font-size: 14px;
+    }
+    .descrip{
+        text-align: left;
+        margin-top: -0.5rem;
+        /* width: 170%; */
+        font-size: 15px;
+    }
+    .liste-menu .row .nom .btn{
+        border: none;
+        font-size: 0.8rem;
+    }
+    .panier{
+        width: 100%;
+        height: 2.5rem;
+        margin-top: 1rem;
+        border-radius: 5px;
+    }
+    .liste-menu .row .nom label{
+        justify-content: left;
+    }
+
+
+    .footer{
+        width: 100%;
+        height: 250px;
+    }
+    #logoFin{
+        width: 40%;
+        margin-left: 30%;
+    }
+    .part2{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .part2 h3{
+        font-size: 1.2rem;
+    }
+    .menu-choisi{
+        margin: auto;
+    }
+    .menu-choisi button{
+        font-size: 1rem;
+        margin-left: 25%;
+    }
+    .part1{
+        width: 100%;
+        justify-content: center;
+    }
+    .cas1{
+        width: 50%;
+        margin: auto;
+        font-size: 0.8rem;
+        padding-left: 1rem;
+    }
+    .cas2{
+        color: #fff;
+        margin: auto;
+        font-size: 0.8rem;
+    }
+    .footer .share a{
+        height: 1.5rem;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        background-color: #ad1000;
+        color: #f5af09;
+        border-radius: 50%;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .footer .credit{
+        font-size: 0.8rem;
+    }
+}
