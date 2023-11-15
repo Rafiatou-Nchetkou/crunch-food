@@ -13,31 +13,35 @@
         <link rel="stylesheet" href="menu_bootstrap.css">
     </head>
     <body>
-        <!-- barre de navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-color">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="./images/logo-crunch.png" width="15%" alt="" srcset=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="Accueil.html">ACCUEIL</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#menu">MENU</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">A PROPOS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">CONTACT</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
+         <!-- Début de la setion header -->
+         <header>
+            <!-- barre de navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-color">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="./images/logo-crunch.png" width="15%" alt="" srcset=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu_bootstrap.html">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://crunchfood.mangedabord.com/">A Propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact_bootstrap.html" tabindex="-1" aria-disabled="true">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Fin de la section header -->
 
           <!-- caroussel -->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -111,20 +115,20 @@
                             <span>10.000F</span>
                         </div>
                         <p class="card-text">11 morceaux de poulet pané aux cornflakes + 02 boissons gratuits (Malta/Coca) + deux portions de complements</p>
-                        <div class="btn btn-primary">
+                        <div class="btn btn-primary" onclick="checkbox(this)">
                             <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">Commander</label>
                         </div>
                     </div>
                 </div>
                 <div class="card choix" style="width: 100%;">
-                    <img src="./img_crunch/img21.jpg" class="card-img-top" height="230rem" alt="...">
+                    <img src="./img_crunch/img21.jpg" class="card-img-top" height="255rem" alt="...">
                     <div class="card-body">
                         <div class="sous-t">
                             <h3 class="card-title">Volcano Roasted</h3>
                             <span>10.000F</span>
                         </div>
                         <p class="card-text">1 poulet entier(4 quarts) braisé au charbon de bois et aux herbes tropicales + 4 portions de compléments</p>
-                        <div class="btn btn-primary">
+                        <div class="btn btn-primary" onclick="checkbox(this)">
                             <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">Commander</label>
                         </div>
                     </div>
@@ -145,7 +149,7 @@
                     <div class="descrip">
                         1 Sandwich au poulet
                     </div>
-                    <div class="panier">
+                    <div class="panier" onclick="checkbox(this)">
                         <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">ajouter à ma commande</label>
                     </div>
                 </div>
@@ -160,7 +164,7 @@
                     <div class="descrip">
                         2 Sandwiches au poulet
                     </div>
-                    <div class="panier">
+                    <div class="panier" onclick="checkbox(this)">
                         <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">ajouter à ma commande</label>
                     </div>
                 </div>
@@ -172,7 +176,7 @@
                     <p>Voici le plat que nous vous conseillons pour aujourd'hui</p>
                 </div>
                 <div class="carte-jour">
-                    <div class="card" style="width: 100%;">
+                    <div class="card choix" style="width: 100%;">
                         <img src="./img_crunch/img19.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="sous-t">
@@ -180,18 +184,22 @@
                                 <h5>10.000F</h5>
                             </div>
                             <p class="card-text">11 morceaux de poulet pané aux cornflakes + 02 boissons gratuits (Malta/Coca) + deux portions de complements</p>
-                            <a href="#" class="btn btn-primary">Commander</a>
+                            <div class="btn btn-primary" onclick="checkbox(this)">
+                                <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">Commander</label>
+                            </div>
                         </div>
                     </div>
-                    <div class="card" style="width: 100%;">
-                        <img src="./img_crunch/img21.jpg" class="card-img-top" height="205rem" alt="...">
+                    <div class="card choix" style="width: 100%;">
+                        <img src="./img_crunch/img21.jpg" class="card-img-top" height="255rem" alt="...">
                         <div class="card-body">
                             <div class="sous-t">
                                 <h5 class="card-title">Volcano Roasted</h5>
                                 <h5>10.000F</h5>
                             </div>
                             <p class="card-text">1 poulet entier(4 quarts) braisé au charbon de bois et aux herbes tropicales + 4 portions de compléments</p>
-                            <a href="#" class="btn btn-primary">Commander</a>
+                            <div class="btn btn-primary" onclick="checkbox(this)">
+                                <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">Commander</label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -208,7 +216,7 @@
                     <div class="descrip">
                         2 morceaux de poulet pané aux cornflakes + une portion de compléments (Livraison à partir de 2 packs)
                     </div>
-                    <div class="panier">
+                    <div class="panier" onclick="checkbox(this)">
                         <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">ajouter à ma commande</label>
                     </div>
                 </div>
@@ -223,7 +231,7 @@
                     <div class="descrip">
                         4 morceaux de poulet pané aux cornflakes +  une portions de complements
                     </div>
-                    <div class="panier">
+                    <div class="panier" onclick="checkbox(this)">
                         <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">ajouter à ma commande</label>
                     </div>
                 </div>
@@ -238,7 +246,7 @@
                     <div class="descrip">
                         Une boisson offerte(Malta/Coca) + 5 morceaux de poulet pané aux cornflakes +  une portions de complements
                     </div>
-                    <div class="panier">
+                    <div class="panier" onclick="checkbox(this)">
                         <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">ajouter à ma commande</label>
                     </div>
                 </div>
@@ -253,7 +261,7 @@
                     <div class="descrip">
                         08 morceaux de poulet pané aux cornflakes + deux portions compléments
                     </div>
-                    <div class="panier">
+                    <div class="panier" onclick="checkbox(this)">
                         <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">ajouter à ma commande</label>
                     </div>
                 </div>
@@ -268,7 +276,7 @@
                     <div class="descrip">
                         01 Coca 35CL + 08 morceaux de poulet pané aux cornflakes + deux portions de compléments
                     </div>
-                    <div class="panier">
+                    <div class="panier" onclick="checkbox(this)">
                         <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">ajouter à ma commande</label>
                     </div>
                 </div>
@@ -283,7 +291,7 @@
                     <div class="descrip">
                         11 morceaux de poulet pané aux cornflakes + 02 boissons gratuits (Malta/Coca) + deux portions de complements
                     </div>
-                    <div class="panier">
+                    <div class="panier" onclick="checkbox(this)">
                         <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">ajouter à ma commande</label>
                     </div>
                 </div>
@@ -298,7 +306,7 @@
                     <div class="descrip">
                         16 morceaux de poulet pané aux cornflakes + quatre portions de complements
                     </div>
-                    <div class="panier">
+                    <div class="panier" onclick="checkbox(this)">
                         <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">ajouter à ma commande</label>
                     </div>
                 </div>
@@ -318,20 +326,20 @@
                                 <span>10.000F</span>
                             </div>
                             <p class="card-text">11 morceaux de poulet pané aux cornflakes + 02 boissons gratuits (Malta/Coca) + deux portions de complements</p>
-                            <div class="btn btn-primary">
+                            <div class="btn btn-primary" onclick="checkbox(this)">
                                 <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">Commander</label>
                             </div>
                         </div>
                     </div>
                     <div class="card choix" style="width: 100%;">
-                        <img src="./img_crunch/img21.jpg" class="card-img-top" height="205rem" alt="...">
+                        <img src="./img_crunch/img21.jpg" class="card-img-top" height="255rem" alt="...">
                         <div class="card-body">
                             <div class="sous-t">
                                 <h3 class="card-title">Volcano Roasted</h3>
                                 <span>10.000F</span>
                             </div>
                             <p class="card-text">1 poulet entier(4 quarts) braisé au charbon de bois et aux herbes tropicales + 4 portions de compléments</p>
-                            <div class="btn btn-primary">
+                            <div class="btn btn-primary" onclick="checkbox(this)">
                                 <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">Commander</label>
                             </div>
                         </div>
@@ -350,7 +358,7 @@
                     <div class="descrip">
                         1/4 de poulet braisé au charbon de bois et aux herbes tropicales + une portions de complements
                     </div>
-                    <div class="panier">
+                    <div class="panier" onclick="checkbox(this)">
                         <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">ajouter à ma commande</label>
                     </div>
                 </div>
@@ -365,7 +373,7 @@
                     <div class="descrip">
                         1/2 poulet braisé au charbon de bois et aux herbes tropicales + deux portions de complements
                     </div>
-                    <div class="panier">
+                    <div class="panier" onclick="checkbox(this)">
                         <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">ajouter à ma commande</label>
                     </div>
                 </div>
@@ -380,7 +388,7 @@
                     <div class="descrip">
                         1 poulet entier(4 quarts) braisé au charbon de bois et aux herbes tropicales + 4 portions de compléments
                     </div>
-                    <div class="panier">
+                    <div class="panier" onclick="checkbox(this)">
                         <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">ajouter à ma commande</label>
                     </div>
                 </div>
@@ -400,20 +408,20 @@
                                 <span>10.000F</span>
                             </div>
                             <p class="card-text">11 morceaux de poulet pané aux cornflakes + 02 boissons gratuits (Malta/Coca) + deux portions de complements</p>
-                            <div class="btn btn-primary">
+                            <div class="btn btn-primary" onclick="checkbox(this)">
                                 <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">Commander</label>
                             </div>
                         </div>
                     </div>
                     <div class="card choix" style="width: 100%;">
-                        <img src="./img_crunch/img21.jpg" class="card-img-top" height="205rem" alt="...">
+                        <img src="./img_crunch/img21.jpg" class="card-img-top" height="255rem" alt="...">
                         <div class="card-body">
                             <div class="sous-t">
                                 <h3 class="card-title">Volcano Roasted</h3>
                                 <span>10.000F</span>
                             </div>
                             <p class="card-text">1 poulet entier(4 quarts) braisé au charbon de bois et aux herbes tropicales + 4 portions de compléments</p>
-                            <div class="btn btn-primary">
+                            <div class="btn btn-primary" onclick="checkbox(this)">
                                 <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">Commander</label>
                             </div>
                         </div>
@@ -432,7 +440,7 @@
                     <div class="descrip">
                         1 à 3.000F (livraison à partir de 2)
                     </div>
-                    <div class="panier">
+                    <div class="panier" onclick="checkbox(this)">
                         <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">ajouter à ma commande</label>
                     </div>
                 </div>
@@ -447,7 +455,7 @@
                     <div class="descrip">
                         2 à 5000F (livraison à partir de 2)
                     </div>
-                    <div class="panier">
+                    <div class="panier" onclick="checkbox(this)">
                         <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">ajouter à ma commande</label>
                     </div>
                 </div>
@@ -467,20 +475,20 @@
                                 <h5>10.000F</h5>
                             </div>
                             <p class="card-text">11 morceaux de poulet pané aux cornflakes + 02 boissons gratuits (Malta/Coca) + deux portions de complements</p>
-                            <div class="btn btn-primary">
+                            <div class="btn btn-primary" onclick="checkbox(this)">
                                 <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">Commander</label>
                             </div>
                         </div>
                     </div>
                     <div class="card choix" style="width: 100%;">
-                        <img src="./img_crunch/img21.jpg" class="card-img-top" height="205rem" alt="...">
+                        <img src="./img_crunch/img21.jpg" class="card-img-top" height="255rem" alt="...">
                         <div class="card-body">
                             <div class="sous-t">
                                 <h3 class="card-title">Volcano Roasted</h3>
                                 <h5>10.000F</h5>
                             </div>
                             <p class="card-text">1 poulet entier(4 quarts) braisé au charbon de bois et aux herbes tropicales + 4 portions de compléments</p>
-                            <div class="btn btn-primary">
+                            <div class="btn btn-primary" onclick="checkbox(this)">
                                 <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">Commander</label>
                             </div>
                         </div>
@@ -500,7 +508,7 @@
                             1/4 de poulet de poulet braisé au charbon de bois et aux herbes tropicales +
                             4 morceaux de poulet pané aux cornflakes + une boisson offerte(Malta/Coca) + une portion de compléments
                     </div>
-                    <div class="panier">
+                    <div class="panier" onclick="checkbox(this)">
                         <input type="checkbox" name=""  class="btn_menu"><label for="" class="btn">ajouter à ma commande</label>
                     </div>
                 </div>
@@ -509,6 +517,9 @@
 
         <div class="menu-choisi">
             <button onclick="envoyerInfos()">Finaliser ma commande</button>
+        </div>
+        <div id="scroll_to_top">
+            <a href="#top"><img src="./img_crunch/icons8-flèche-haut-64.png" width="55%" height="55%" alt="Retourner en haut" /></a>
         </div>
         
         <!-- Début de la section footer-->
@@ -535,7 +546,7 @@
             </div>
             <div class="share">
                 <a href="#" class="fab fa-facebook"></a>
-                <a href="#" class='fab fa-twitter'></a>
+                <a href="#" class="fa-brands fa-x-twitter"></a>
                 <a href="#" class="fab fa-instagram"></a>
                 <a href="#" class="fab fa-linkedin"></a>
             </div>
@@ -546,6 +557,7 @@
         <script src="js/bootstrap.js"></script>
     </body>
     <script>
+        // fonction permettant d'envoyer les infos sur le formulaire
         function envoyerInfos() {
           var cartes = document.querySelectorAll(".choix");
           var cartesSelectionnees = [];
@@ -558,6 +570,7 @@
             if (selectionner.checked) {
               var titre = carte.querySelector("h3").textContent;
               var prix = carte.querySelector("span").textContent;
+
               cartesSelectionnees.push({ titre: titre, prix: prix });
             }
           });
@@ -567,6 +580,19 @@
         
           // Redirigez vers la page de destination
           window.location.href = "formulaire_bootstrap.html";
+        }
+
+
+        // fonction permettant de selectionner le checkbox lorsqu'on clique sur le boutton commander
+        var checked = false;
+        function checkbox(e){
+            if (e.type === "checkbox"){
+                checked? e.checked = false : e.checked = true;
+                checked = !checked;
+                return ;
+            }
+            checked? e.firstElementChild.checked = false : e.firstElementChild.checked = true;
+            checked = !checked;
         }
     </script>
 </html>

@@ -57,10 +57,10 @@
                     <input type="date" class="text" id="date-livraison"><br><br>
                     <h2 class="h2-form">Heure de la livraison</h2>
                     <div class="heure">
-                        <input type="radio" name="heure" id="tot" value="Le plus tot possible"> <label for="heure">Le plus tôt possible</label><br><br>
-                        <input type="radio" name="heure" id="tot2" value="Dans 1h ou 2h"> <label for="heure">Dans 1h ou 2h</label><br><br>
-                        <input type="radio" name="heure" id="soir" value="Tourné du soir"> <label for="heure">Tournée du soir (19h-21h)</label><br><br>
-                        <input type="radio" name="heure" id="autre" value="Autre"> <label for="heure">Autre</label><br><br>
+                        <input type="radio" name="heure" id="tot" value="Le plus tot possible"> <label for="heure">Le plus tôt possible</label><br>
+                        <input type="radio" name="heure" id="tot2" value="Dans 1h ou 2h"> <label for="heure">Dans 1h ou 2h</label><br>
+                        <input type="radio" name="heure" id="soir" value="Tourné du soir"> <label for="heure">Tournée du soir (19h-21h)</label><br>
+                        <input type="radio" name="heure" id="autre" value="Autre"> <label for="heure">Autre</label><br>
                     </div><br>
 
                     <label for="" class="label">*Lieu de livraison*</label><br><br>
@@ -118,11 +118,15 @@
         // code js de l'envoi du formulaire sur whatsapp
         function valider(bouton){
             var carte = bouton.parentNode;
-            // var pouletPane = document.getElementById("poulet-pane").value;
-            // var pouletpane = document.getElementById("poulet-pane").value;
+            var numero = document.getElementById("numéro").value;
+            var persoAppeler = document.getElementById("perso-appeler").value;
+            var dateLivraison = document.getElementById("date-livraison").value;
+            var lieuLivraison = document.getElementById("lieu-livraison").value;
             var h3 = carte.querySelectorAll("h3")
             var valeur=h3;
             var titre= "";
+
+            if(numero && persoAppeler && dateLivraison && lieuLivraison){
                 for(val of valeur){
                         titre += val.textContent + ", ";
                  }
@@ -134,7 +138,12 @@
                 prix+= val.textContent + ", ";
             }
 
-
+            }
+            else{
+                alert ("veuillez remplir tous les champs")
+            }
+            
+            
             // var p = carte.querySelectorAll("span").textContent;
         //      let carteDivPrix = []
         //      let carteDivTitre = []
@@ -230,7 +239,7 @@
                 var lieuLivraison = document.getElementById("test8").textContent;
                 var indicationLivraison = document.getElementById("test9").textContent;
 
-                var url="https://wa.me/+237698144985?text=" 
+                var url="https://wa.me/+237697388108?text=" 
                 var info = "je veux un: " + titre
                 +"Prix: " + prix 
                 +"comme complément: " +complements

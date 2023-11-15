@@ -49,17 +49,17 @@
                         <input type="checkbox" name="boisson" id="grenadine" value="Grenadine"> <label for="boisson">Grenadine</label>
                         <input type="checkbox" name="boisson" id="Aucune" value="Aucune"> <label for="boisson">Aucune</label>
                     </div><br>
-                    <label for="">*Autres précisions concernant ma commande*</label><br>
+                    <label for="text">*Autres précisions concernant ma commande*</label><br>
                     <input type="text" class="text" id="precis-commande">
 
                     <h2>Détail de livraison</h2>
 
-                    <label for="" class="label">*Numéro à appeler*</label><br>
-                    <input type="number" class="text" id="numéro" name ="numero"> <br><br>
-                    <label for="">*Nom de la personne  à appeler*</label><br>
-                    <input type="text" class="text" id="perso-appeler"><br><br>
-                    <label for="">*Date de livraison*</label><br>
-                    <input type="date" class="text" id="date-livraison"  name= "date"><br>
+                    <label for="numéro" class="label">*Numéro à appeler*</label><br>
+                    <input type="tel" class="text" id="numéro" name ="numero"  minlength="9" maxlength="9" require> <br><br>
+                    <label for="perso-appeler">*Nom de la personne  à appeler*</label><br>
+                    <input type="text" class="text" id="perso-appeler" require><br><br>
+                    <label for="date-livraison">*Date de livraison*</label><br>
+                    <input type="date" class="text" id="date-livraison"  name= "date" require><br>
                     <h2 class="h2-form">Heure de la livraison</h2>
                     <div class="heure">
                         <input type="radio" name="heure" id="tot" value="Le plus tot possible"> <label for="heure">Le plus tôt possible</label><br>
@@ -69,7 +69,7 @@
                     </div><br>
 
                     <label for="" class="label">*Lieu de livraison*</label><br>
-                    <input type="text" class="text" id="lieu-livraison"><br><br>
+                    <input type="text" class="text" id="lieu-livraison" require><br><br>
 
                     <label for="" class="label">*Autrs indications concernant le lieu de livraison*</label><br>
                     <input type="text" class="text" id="indication-livraison"><br><br>
@@ -269,7 +269,7 @@
                 // + "Mon emballage" + emballages + "%0a"
                 + "Autres précision sur la commande: " + precisionCommande 
                 + "Numéro: " + numero 
-                + "Nom de la personne à appeler " + persoAppeler
+                + "Nom de la personne à appeler: " + persoAppeler
                 + "Date de livraison: " + dateLivraison
                 + "Heure de livraison: " + heureLivraison 
                 + "Lieu de livraison:" + lieuLivraison 
